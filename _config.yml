@@ -1,0 +1,64 @@
+# Site identity
+title: Vic Ceramics
+tagline: Handmade pottery & ceramics
+description: >-
+  A personal portfolio of handmade pottery and ceramics by Vic.
+  Functional forms, earthy glazes, and small-batch studio work.
+
+# URL settings (IMPORTANT)
+url: "https://vyelevich.github.io"
+baseurl: "/vic-ceramics"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Files to include/exclude
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Localization
+lang: en-US
+timezone: America/Los_Angeles
+
+# Author / identity
+author:
+  name: Victor Yelevich
+
+# Social presence
+social:
+  name: Vic Ceramics
+  links:
+    - https://www.instagram.com/vyelevich/
+
+instagram_username: vyelevich
+
+# Default metadata for a consistent, professional feel
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/og-default.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Victor Yelevich
+
+# Avoid blog-y surprises
+future: false
